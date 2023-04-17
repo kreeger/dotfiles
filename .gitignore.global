@@ -1,0 +1,8 @@
+*.DS_Store
+*.pyc
+.env
+.ruby-version
+.node-version
+*.xcscmblueprint
+.npmrc
+.idea

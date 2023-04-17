@@ -1,0 +1,34 @@
+[user]
+	name = Ben Kreeger
+	email = ben@kree.gr
+    signingkey = 1F33DAF2F49E4046
+[core]
+    excludesfile = /Users/bkreeger/.gitignore.global
+    editor = nvim
+    compression = 0
+    packedGitLimit = 512m
+    packedGitWindowSize = 512m
+[pack]
+    deltaCacheSize = 2047m
+    packSizeLimit = 2047m
+    windowMemory = 2047m
+[color]
+    ui = true
+[github]
+    user = kreeger
+[push]
+    default = matching
+[credential]
+    helper = osxkeychain
+[filter "lfs"]
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
+[gpg]
+    program = /usr/local/bin/gpg
+[commit]
+    gpgsign = true
+[init]
+    defaultBranch = main
+[pull]
+	ff = only
