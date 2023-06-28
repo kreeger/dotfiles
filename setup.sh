@@ -15,6 +15,6 @@ declare -a dotfiles=("gemrc" "gitconfig" "gitignore.global")
 for file in "${dotfiles[@]}"
 do
     if [[ ! -a "$HOME/.$file" ]]; then
-        ln -sfv ./.$file $HOME/.$file
+        ln -sfv .$file $HOME/.$file
     fi
 done
