@@ -3,9 +3,6 @@
 # Setup script.
 if [[ ! -d "$HOME/.zsh" ]]; then
     git clone --recurse-submodules https://github.com/kreeger/zshrc.git $HOME/.zsh
-fi
-
-if [[ ! -a "$HOME/.zshrc" ]]; then
     ln -sfv $HOME/.zsh/zshrc $HOME/.zshrc
 fi
 
