@@ -12,9 +12,12 @@ fi
 # Link dotfiles.
 declare -a dotfiles=("gemrc" "gitconfig" "gitignore.global")
 
+SCRIPT=$(readlink -f "$0")
+SCRIPTPATH=$(dirname "$SCRIPT")
+
 for file in "${dotfiles[@]}"
 do
     if [[ ! -a "$HOME/.$file" ]]; then
-        ln -sfv .$file $HOME/.$file
+        ln -sfv $SCRIPTPATH/.$file $HOME/.$file
     fi
 done
