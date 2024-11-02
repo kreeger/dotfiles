@@ -1,3 +1,3 @@
 # kreeger's dotfiles
 
-My dotfiles. Mostly used for GitHub Codespaces.
+I've moved these to https://git.kree.gr/kreeger/dotfiles.
